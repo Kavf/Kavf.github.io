@@ -10,7 +10,10 @@
         <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
         <script src="/pace-master/pace.min.js"></script>
         <link rel="stylesheet" href="/pace-master/themes/black/pace-theme-minimal.css">
+        <link rel="stylesheet" href="/swiper-4.5.0/swiper.min.css">
 	  	<link rel="stylesheet" href="/css/main.css">
+	  	<script src="/jquery/3.4.1/jquery.min.js"></script>
+		<script src="/swiper-4.5.0/swiper.min.js"></script>
 	</head>
 	<body>
 		<header>
@@ -18,15 +21,20 @@
 		<div class="box">
 			<div class="logo pull-left">鼎秀</div>
 			<ul class="nav pull-left">
+				<li><a href="/">首页</a></li>
 				
-				<li><a href="/关于">关于</a></li>
+				<li><a href="/categories/关于">关于</a></li>
 				
-				<li><a href="/博客">博客</a></li>
+				<li><a href="/categories/博客">博客</a></li>
+				
+				<li><a href="/categories/服务">服务</a></li>
+				
+				<li><a href="/categories/联系">联系</a></li>
 				
 			</ul>
 			<div class="bar pull-right">
-				<a class="tel" href="javascript:void();"></a>
-				<a class="qr" href="javascript:void();"></a>
+				<a class="tel" href="javascript:void(0);"></a>
+				<a class="qr" href="javascript:void(0);"></a>
 				<div class="tel_box tel_qr_box">
 					<div class="txt">联系电话:</div>
 					<div class="tel_num">15379035970</div>
@@ -50,6 +58,27 @@
 	</div>
 </header>
 		
+			<!-- 待优化 需要做的酷一点 == -->
+<div class="banner">
+	<div class="box">
+		<div class="swp_banner">
+			<div class="swiper-wrapper">
+				
+				<div class="swiper-slide" style="background-image:url(/img/banner_3.jpg);"></div>
+				
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+	</div>
+</div>
+<script>
+	var swp_banner = new Swiper('.swp_banner',{
+		pagination: {
+	    	el: '.swiper-pagination',
+	    },
+	});
+</script>
+		
 		<div class="service">
 	<div class="box">
 		<div class="cls">
@@ -60,25 +89,25 @@
 			<li>
 				<div class="ico pc"></div>
 				<div class="title">网站建设</div>
-				<div class="des">基于现代浏览器符合审美前沿的网站建设服务</div>
+				<div class="des">专门为中小型企业及个人提供的网站建设服务</div>
 				<a href="#" class="more">了解更多 &gt;</a>
 			</li>
 			<li>
 				<div class="ico wxm"></div>
 				<div class="title">小程序开发</div>
-				<div class="des">基于微信的小程序设计、开发</div>
+				<div class="des">基于uni-app框架的小程序设计、开发，一次编码多端发布</div>
 				<a href="#" class="more">了解更多 &gt;</a>
 			</li>
 			<li>
 				<div class="ico h5"></div>
 				<div class="title">H5移动端开发</div>
-				<div class="des">基于手机浏览器和微信内置浏览器的H5页面开发</div>
+				<div class="des">基于手机浏览器和微信内置浏览器的手机网站开发服务</div>
 				<a href="#" class="more">了解更多 &gt;</a>
 			</li>
 			<li>
 				<div class="ico app"></div>
 				<div class="title">APP开发</div>
-				<div class="des">基于flutter程序语言的手机app开发</div>
+				<div class="des">基于uni-app框架的苹果、安卓手机app开发服务</div>
 				<a href="#" class="more">了解更多 &gt;</a>
 			</li>
 		</ul>
@@ -100,44 +129,41 @@
 					鼎秀网络工作室成立啦！
 				</div>
 				<div class="des">
-					鼎秀网络工作室成立于2019年6月2日，是一家专注于网建设、APP、小程序开发及周边服务的个人工作室，工作室成立的初衷是能以低于行业平均的价格为有网站建设、APP开发等需求的中小企业及个人提供服务。
+					鼎秀网络工作室成立于2019年6月2日，是一家专注于网建设、APP、小程序开发及相关配套服务的个人工作室，工作室成立的初衷是能以低于行业平均的价格为有网站建设、APP开发等需求的中小企业及个人提供服务。
 				</div>
 			</div>
 		</div>
 		<div class="news pull-right">
 			<ul class="list">
+				
 				<li>
-					<div class="date pull-left">
-						<div class="day">27</div>
-						<div class="ym">2019-08</div>
-					</div>
-					<div class="con pull-right">
-						<div class="title">鼎秀网络工作室xia成立啦,欢迎有网站建设需求的客户前来..</div>
-						<div class="des">鼎秀网络成立于2019年，是一家专注于APP开发小程序网站建设及周边服务的及周边服务的及周边服务的及周边服务的...</div>
-					</div>
+					<a href="/2019/08/24/企业网站建设怎么选择？/">
+						<div class="date pull-left">
+							<div class="day">24</div>
+							<div class="ym">2019-08</div>
+						</div>
+						<div class="con pull-right">
+							<div class="title">企业网站建设怎么选择？</div>
+							<div class="des"></div>
+						</div>
+					</a>
 				</li>
+				
 				<li>
-					<div class="date pull-left">
-						<div class="day">27</div>
-						<div class="ym">2019-08</div>
-					</div>
-					<div class="con pull-right">
-						<div class="title">鼎秀网络工作室xia成立啦,欢迎有网站建设需求的客户前来..</div>
-						<div class="des">鼎秀网络成立于2019年，是一家专注于APP开发小程序网站建设及周边服务的及周边服务的及周边服务的及周边服务的...</div>
-					</div>
+					<a href="/2019/08/23/鼎秀网络工作室成立啦/">
+						<div class="date pull-left">
+							<div class="day">23</div>
+							<div class="ym">2019-08</div>
+						</div>
+						<div class="con pull-right">
+							<div class="title">鼎秀网络工作室成立啦</div>
+							<div class="des"></div>
+						</div>
+					</a>
 				</li>
-				<li>
-					<div class="date pull-left">
-						<div class="day">27</div>
-						<div class="ym">2019-08</div>
-					</div>
-					<div class="con pull-right">
-						<div class="title">鼎秀网络工作室xia成立啦,欢迎有网站建设需求的客户前来..</div>
-						<div class="des">鼎秀网络成立于2019年，是一家专注于APP开发小程序网站建设及周边服务的及周边服务的及周边服务的及周边服务的...</div>
-					</div>
-				</li>
+				
 			</ul>
-			<a href="#" class="more">查看更多 &gt;</a>
+			<a href="/categories/博客" class="more">查看更多 &gt;</a>
 		</div>
 	</div>
 </div>
@@ -147,7 +173,6 @@
 		<div class="copyright">版权所有 &copy;鼎秀网络工作室</div>
 	</div>
 </footer>
-		<script src="/jquery/3.4.1/jquery.min.js"></script>
 		<script src="/js/main.js"></script>
 	</body>
 </html>

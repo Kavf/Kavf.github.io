@@ -10,7 +10,10 @@
         <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
         <script src="/pace-master/pace.min.js"></script>
         <link rel="stylesheet" href="/pace-master/themes/black/pace-theme-minimal.css">
+        <link rel="stylesheet" href="/swiper-4.5.0/swiper.min.css">
 	  	<link rel="stylesheet" href="/css/main.css">
+	  	<script src="/jquery/3.4.1/jquery.min.js"></script>
+		<script src="/swiper-4.5.0/swiper.min.js"></script>
 	</head>
 	<body>
 		<header>
@@ -18,15 +21,20 @@
 		<div class="box">
 			<div class="logo pull-left">鼎秀</div>
 			<ul class="nav pull-left">
+				<li><a href="/">首页</a></li>
 				
-				<li><a href="/关于">关于</a></li>
+				<li><a href="/categories/关于">关于</a></li>
 				
-				<li><a href="/博客">博客</a></li>
+				<li><a href="/categories/博客">博客</a></li>
+				
+				<li><a href="/categories/服务">服务</a></li>
+				
+				<li><a href="/categories/联系">联系</a></li>
 				
 			</ul>
 			<div class="bar pull-right">
-				<a class="tel" href="javascript:void();"></a>
-				<a class="qr" href="javascript:void();"></a>
+				<a class="tel" href="javascript:void(0);"></a>
+				<a class="qr" href="javascript:void(0);"></a>
 				<div class="tel_box tel_qr_box">
 					<div class="txt">联系电话:</div>
 					<div class="tel_num">15379035970</div>
@@ -50,6 +58,27 @@
 	</div>
 </header>
 		
+			<!-- 待优化 需要做的酷一点 == -->
+<div class="banner">
+	<div class="box">
+		<div class="swp_banner">
+			<div class="swiper-wrapper">
+				
+				<div class="swiper-slide" style="background-image:url(/img/banner_3.jpg);"></div>
+				
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+	</div>
+</div>
+<script>
+	var swp_banner = new Swiper('.swp_banner',{
+		pagination: {
+	    	el: '.swiper-pagination',
+	    },
+	});
+</script>
+		
 		<div style="padding:20px;">
 	<div style="padding:20px;">
 		<h1 style="text-align: center;">鼎秀网络工作室成立啦</h1>
@@ -64,8 +93,6 @@
 		<nav class="pagination" role="pagination">
 			
         	
-        	<a class="pull-left" href="/2019/08/24/微信小程序为什么这么火？/">&laquo; 微信小程序为什么这么火？</a>
-         	
          	
 		</nav>
 	</div>
@@ -76,7 +103,6 @@
 		<div class="copyright">版权所有 &copy;鼎秀网络工作室</div>
 	</div>
 </footer>
-		<script src="/jquery/3.4.1/jquery.min.js"></script>
 		<script src="/js/main.js"></script>
 	</body>
 </html>

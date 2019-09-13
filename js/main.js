@@ -1,4 +1,4 @@
-(function(){
+$(document).ready(function(){
 	$(window).on('scroll',function(){
 		var sTop = $(window).scrollTop();
 		if(sTop > $('header').height()){
@@ -17,4 +17,4 @@
 	},function(){
 		$('header .bar .qr_box').removeClass('active');
 	});
-})();
+});
