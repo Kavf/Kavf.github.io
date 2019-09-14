@@ -17,4 +17,5 @@ $(document).ready(function(){
 	},function(){
 		$('header .bar .qr_box').removeClass('active');
 	});
+	$('.page').css('min-height', $(document).innerHeight() - $('header').height() - $('footer').height() + 'px');
 });
