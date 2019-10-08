@@ -72,7 +72,7 @@ header .bar .tel_qr_box .time span{font-size: 14px;color:#666;font-weight: bold;
 .service .list li:hover{box-shadow:0 0 9px rgba(0,0,0,0.15);}
 .news_wrapper .box{padding-top:40px;}
 .pro_news_box{display: flex;width:100%;justify-content: space-between;}
-.profile{width:500px;height:500px;margin-top:40px;transition:all ease 0.5s;margin-right:20px;}
+.profile{width:500px;height:500px;margin-top:40px;transition:all ease 0.5s;}
 .profile .img{width:100%;}
 .profile .img img{width:100%;}
 .profile .con{padding:25px 35px;}
@@ -133,7 +133,7 @@ footer .box{padding:0;}
 }
 /* 中等屏幕（桌面显示器，大于等于 992px） */
 @media (max-width: 992px) {
-    .profile{width:100%;height:auto;}
+    .profile{width:100%;height:auto;margin-right:20px;}
     .news{width:100%;}
     .news .list li .con{width:100%;}
     .category-block{padding-left:0;}
@@ -145,5 +145,6 @@ footer .box{padding:0;}
     header .nav_bar li{height:2.2rem;line-height:2.2rem;border-bottom:1px solid #eee;display: block;}
     header .nav_bar li:last-child{border:0;}
     .pro_news_box{flex-wrap: wrap;}
+    .profile{margin-right:0;}
 }
 
