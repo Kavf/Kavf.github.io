@@ -41,7 +41,7 @@ header .bar a.menu{background:url(../img/ico_menu.png) no-repeat center;backgrou
 header .bar a.tel{background:url(../img/ico_tel.png) no-repeat center;}
 header .bar a.qr{background:url(../img/ico_qr.png) no-repeat center;}
 header .bar a:hover,header .bar a.on{opacity: 0.5;}
-header .bar .tel_qr_box{position:absolute;top:30px;right:0;z-index: 5;background:#fff;box-shadow: 0 0 10px rgba(0,0,0,0.2);overflow:hidden;height:0;opacity: 0;transition: all ease 0.3s;}
+header .bar .tel_qr_box{position:absolute;top:30px;right:0;z-index: 11;background:#fff;box-shadow: 0 0 10px rgba(0,0,0,0.2);overflow:hidden;height:0;opacity: 0;transition: all ease 0.3s;}
 header .bar .tel_qr_box.active{height:auto;opacity: 1;top:45px;padding:15px;}
 header .bar .tel_qr_box .txt{color:#999;font-size: 12px;}
 header .bar .tel_box .txt{margin-bottom:5px;}
@@ -144,11 +144,18 @@ footer .box{padding:0;}
 }
 /* 小屏幕（平板，大于等于 768px） */
 @media (max-width: 768px) {
+    header{height:4rem;}
+    .header_wrapper{height:4rem;}
+    header .logo{line-height:4rem;font-size:2rem;}
+    header .bar{margin-top:1.25rem;}
     header .bar a.menu{display: inline-block !important;}
-    header .nav_bar{position: absolute;width:12rem;height:auto;top:70px;line-height:normal;background:#fff;z-index: 5;right: 0;box-shadow: 0 0 5px rgba(0,0,0,0.15);padding: 20px 0;}
+    header .nav_bar{position: absolute;width:12rem;height:auto;top:4rem;line-height:normal;background:#fff;z-index: 12;right: 0;box-shadow: 0 0 5px rgba(0,0,0,0.15);padding: 20px 0;}
     header .nav_bar li{height:2.2rem;line-height:2.2rem;border-bottom:1px solid #eee;display: block;}
     header .nav_bar li:last-child{border:0;}
-    .banner{margin-top:1.07rem;}
+    header .nav_bar li a{display: inline-block;width:100%;}
+    header .bar .tel_qr_box.active{top:2.6rem;}
+    .banner{margin-top:0.4rem;}
+    .cls .ch{font-size:1.5rem;}
     .service .box{padding-top:1.71rem;}
     .service .list{margin-top:1.5rem;}
     .service .list li{height:13.5rem;}
@@ -159,7 +166,11 @@ footer .box{padding:0;}
     .profile{margin-right:0;margin-top:1.4rem;}
     .profile .con{padding:0.89rem 1.25rem;}
     .news{margin-top:1.25rem;}
-    footer{height:2.32rem;}
-    .copyright{line-height:2.32rem;}
+    footer{height:3.5rem;}
+    .copyright{line-height:3.5rem;}
+    .page{padding:.2rem 0;min-height:auto !important;}
+    .page .box{padding:0 2%;}
+    .d_title{font-size:1.5rem;}
+    .pagination{padding:0;}
 }
 
