@@ -28,17 +28,19 @@ ul,li{list-style-type: none;}
 
 .box{width:1200px;margin:0 auto;padding-top:1px;}
 header{height:70px;}
+header .box{display: flex;justify-content: space-between}
 header .logo{line-height:64px;font-size: 28px;color: #333;letter-spacing: 5px;position:relative;}
 header .logo::before{display: block;content:'';width:100%;height:100%;position:absolute;left:0;top:0;z-index: 999;}
-header .nav_bar{height:70px;line-height: 70px;margin-left:300px;}
+header .nav_bar{height:70px;line-height: 70px;width:475px;margin:0 auto;}
 header .nav_bar li{margin:0 28px;font-size: 16px;color: #666;display: inline-block;transition: all ease 0.5s;}
 header .nav_bar li a{color:inherit;}
 header .nav_bar li:hover{    text-shadow: 0 3px 5px;opacity: 0.5;}
 header .bar{margin-top:26px;position:relative;}
 header .bar a{display:inline-block;margin-left:30px;padding:10px;transition: all ease 0.5s;}
+header .bar a.menu{background:url(../img/ico_menu.png) no-repeat center;background-size:100%}
 header .bar a.tel{background:url(../img/ico_tel.png) no-repeat center;}
 header .bar a.qr{background:url(../img/ico_qr.png) no-repeat center;}
-header .bar a:hover{opacity: 0.5;}
+header .bar a:hover,header .bar a.on{opacity: 0.5;}
 header .bar .tel_qr_box{position:absolute;top:30px;right:0;z-index: 5;background:#fff;box-shadow: 0 0 10px rgba(0,0,0,0.2);overflow:hidden;height:0;opacity: 0;transition: all ease 0.3s;}
 header .bar .tel_qr_box.active{height:auto;opacity: 1;top:45px;padding:15px;}
 header .bar .tel_qr_box .txt{color:#999;font-size: 12px;}
@@ -50,15 +52,15 @@ header .bar .tel_qr_box .time{white-space: nowrap;font-size: 12px;color: #999;ma
 header .bar .tel_qr_box .time span{font-size: 14px;color:#666;font-weight: bold;display: inline-block;margin-bottom:5px;}
 .header_wrapper{width:100%;height:70px;box-shadow:0 0 5px rgba(0,0,0,0.15);background:#fff; animation-timing-function: ease;animation-duration: 1s;}
 .header_wrapper.fixed{position:fixed;top:0;z-index: 999;animation-duration: 0.7s;animation-name: trans_fixed;}
-.banner{height:450px;margin-top: 30px;}
-.swp_banner{width:100%;height:450px;overflow:hidden;position:relative;}
+.banner{margin-top: 30px;}
+.swp_banner{width:100%;overflow:hidden;position:relative;}
 .swp_banner .swiper-slide{background-size:cover;background-position:center;background-repeat: no-repeat;}
 .service .box{padding-top:48px;}
 .cls{text-align: center;}
 .cls .ch{font-size: 28px;color: #333;}
 .cls .en{font-size: 12px;color: #333;}
 .service .list{margin-top:40px;}
-.service .list li{float:left;clear:right;width:300px;text-align: center;height:380px;position:relative;transition:all ease 0.5s;}
+.service .list li{text-align: center;height:380px;position:relative;transition:all ease 0.5s;}
 .service .list li .ico{padding:48px 0;margin-top:57px;}
 .service .list li .ico.pc{background:url(../img/ico_pc.png) no-repeat center;}
 .service .list li .ico.wxm{background:url(../img/ico_wxmp.png) no-repeat center;}
@@ -69,22 +71,29 @@ header .bar .tel_qr_box .time span{font-size: 14px;color:#666;font-weight: bold;
 .service .list li .more{/*display: block;*/display:none;margin:0 auto;width:108px;height:30px;line-height:30px;border:1px solid #666;color: #666;margin-top:30px;position:absolute;left:0;right:0;bottom:56px;}
 .service .list li:hover{box-shadow:0 0 9px rgba(0,0,0,0.15);}
 .news_wrapper .box{padding-top:40px;}
-.profile{width:500px;height:500px;margin-top:40px;transition:all ease 0.5s;}
-.profile .img,.profile .img img{width:500px;height:260px;}
+.pro_news_box{display: flex;width:100%;justify-content: space-between;}
+.profile{width:500px;height:500px;margin-top:40px;transition:all ease 0.5s;margin-right:20px;}
+.profile .img{width:100%;}
+.profile .img img{width:100%;}
 .profile .con{padding:25px 35px;}
 .profile .con .title{font-size: 16px;color: #333;}
 .profile .con .des{margin-top:25px;color: #666;line-height: 30px;text-indent: 30px;}
 .profile:hover{box-shadow:0 0 9px rgba(0,0,0,0.15);}
 .news_wrapper{margin-bottom:40px;}
 .news{width:614px;margin-top:40px;}
-.news .list li{height:119px;margin-bottom:20px;transition: all ease 0.5s;}
+.news .list li{height:119px;margin-bottom:20px;transition: all ease 0.5s;display: flex;}
 .news .list li:last-child{margin:0;}
 .news .list li .date{width:119px;height:119px;background:#eee;text-align: center;}
 .news .list li .date .day{font-size: 36px;color: #333;margin-top:25px;}
 .news .list li .date .ym{color: #333;}
 .news .list li .con{width:495px;height:119px;border:1px solid #eee;border-left:0;padding:24px 16px;}
 .news .list li .con .title{font-size: 16px;color: #333;}
-.news .list li .con .des{margin-top:10px;color:#666;line-height: 24px;}
+.news .list li .con .des{margin-top:10px;color:#666;line-height: 24px;display: -webkit-box;
+-webkit-line-clamp: 2;
+text-overflow: ellipsis;
+overflow: hidden;
+ -webkit-box-orient: vertical;
+}
 .news .list li:hover{box-shadow:0 0 9px rgba(0,0,0,0.15);}
 .news .more{display: block;width:110px;height:31px;margin:38px auto 0 auto;border:1px solid #666;text-align: center;line-height: 31px;color:#666;opacity:0.5;transition: all ease 0.5s;}
 .news .more:hover{opacity: 1;}
@@ -116,4 +125,25 @@ footer .box{padding:0;}
 .pagination{width:100%;}
 #page-nav{margin-top:30px;}
 #page-nav a, #page-nav span{margin:0 8px;}
+
+/* 没有任何媒体查询相关的代码，默认为移动设备优先改为默认PC端优先 */
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (max-width: 1200px) {
+    .box{width:100%;padding-left: 2%;padding-right: 2%;}
+}
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (max-width: 992px) {
+    .profile{width:100%;height:auto;}
+    .news{width:100%;}
+    .news .list li .con{width:100%;}
+    .category-block{padding-left:0;}
+}
+/* 小屏幕（平板，大于等于 768px） */
+@media (max-width: 768px) {
+    header .bar a.menu{display: inline-block !important;}
+    header .nav_bar{position: absolute;width:12rem;height:auto;top:70px;line-height:normal;background:#fff;z-index: 5;right: 0;box-shadow: 0 0 5px rgba(0,0,0,0.15);padding: 20px 0;}
+    header .nav_bar li{height:2.2rem;line-height:2.2rem;border-bottom:1px solid #eee;display: block;}
+    header .nav_bar li:last-child{border:0;}
+    .pro_news_box{flex-wrap: wrap;}
+}
 
