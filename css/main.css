@@ -67,7 +67,11 @@ header .bar .tel_qr_box .time span{font-size: 14px;color:#666;font-weight: bold;
 .service .list li .ico.h5{background:url(../img/ico_h5.png) no-repeat center;}
 .service .list li .ico.app{background:url(../img/ico_mbi.png) no-repeat center;}
 .service .list li .title{font-size: 28px;color: #333;margin-top:25px;}
-.service .list li .des{margin-top:18px;line-height:24px;padding:0 35px;color:#666;font-size: 12px;}
+.service .list li .des{margin-top:18px;line-height:24px;padding:0 35px;color:#666;font-size: 12px;display: -webkit-box;
+-webkit-line-clamp: 2;
+text-overflow: ellipsis;
+overflow: hidden;
+ -webkit-box-orient: vertical;}
 .service .list li .more{/*display: block;*/display:none;margin:0 auto;width:108px;height:30px;line-height:30px;border:1px solid #666;color: #666;margin-top:30px;position:absolute;left:0;right:0;bottom:56px;}
 .service .list li:hover{box-shadow:0 0 9px rgba(0,0,0,0.15);}
 .news_wrapper .box{padding-top:40px;}
@@ -144,7 +148,18 @@ footer .box{padding:0;}
     header .nav_bar{position: absolute;width:12rem;height:auto;top:70px;line-height:normal;background:#fff;z-index: 5;right: 0;box-shadow: 0 0 5px rgba(0,0,0,0.15);padding: 20px 0;}
     header .nav_bar li{height:2.2rem;line-height:2.2rem;border-bottom:1px solid #eee;display: block;}
     header .nav_bar li:last-child{border:0;}
+    .banner{margin-top:1.07rem;}
+    .service .box{padding-top:1.71rem;}
+    .service .list{margin-top:1.5rem;}
+    .service .list li{height:13.5rem;}
+    .service .list li .ico{padding:1.71rem 0;margin-top:2.03rem;background-size:auto 100% !important;}
+    .service .list li .title{font-size: 1rem;margin-top:0.89rem;}
+    .service .list li .des{padding:0;margin-top:0.64rem;}
     .pro_news_box{flex-wrap: wrap;}
-    .profile{margin-right:0;}
+    .profile{margin-right:0;margin-top:1.4rem;}
+    .profile .con{padding:0.89rem 1.25rem;}
+    .news{margin-top:1.25rem;}
+    footer{height:2.32rem;}
+    .copyright{line-height:2.32rem;}
 }
 
